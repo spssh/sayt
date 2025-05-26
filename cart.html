@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>🛒 Ваша корзина</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>🛒 Ваша корзина</h1>
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="catalog.html">Каталог</a> |
+        <a href="cart.html">Корзина</a>
+    </nav>
+</header>
+
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>Скин</th>
+                <th>Цена</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- Здесь будут товары из корзины -->
+        </tbody>
+    </table>
+    <p><strong>Итого: ₽<span id="total-price">0.00</span></strong></p>
+    <button onclick="checkout()">Оплатить</button>
+</main>
+
+<footer>
+    <p>&copy; 2025 Торговая площадка Fortnite</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>🛍️ Каталог скинов | Fortnite Market</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>🛍️ Каталог скинов</h1>
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="catalog.html">Каталог</a> |
+        <a href="cart.html">Корзина</a> |
+        <span id="auth-links-catalog">
+            <a href="profile.html">Профиль</a> |
+            <a href="#" onclick="logout()">Выход</a>
+        </span>
+    </nav>
+</header>
+
+<main>
+    <label for="category-filter">Фильтр по категории:</label>
+    <select id="category-filter">
+        <option value="all">Все</option>
+        <option value="marvel">Marvel</option>
+        <option value="dc">DC</option>
+        <option value="anime">Аниме</option>
+        <option value="game">Игровые персонажи</option>
+    </select>
+    <div class="product-list" id="product-list">
+        <!-- Товары загрузятся через JS -->
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Торговая площадка Fortnite</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
