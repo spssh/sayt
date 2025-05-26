@@ -1,2 +1,2 @@
 # sayt
-https://spssh.github.io/sayt/catalog.html
+https://spssh.github.io/sayt/index.html
