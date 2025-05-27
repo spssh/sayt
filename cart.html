@@ -2,35 +2,44 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <title>🛒 Ваша корзина</title>
+    <title>Ваша корзина</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-    <h1>🛒 Ваша корзина</h1>
+    <h1>Ваша корзина</h1>
     <nav>
         <a href="index.html">Главная</a> |
         <a href="catalog.html">Каталог</a> |
-        <a href="cart.html">Корзина</a>
+        <a href="cart.html">Корзина</a> |
+        <span id="auth-links-catalog">
+            <a href="profile.html">Профиль</a> |
+            <a href="#" onclick="logout()">Выход</a>
+        </span>
     </nav>
 </header>
 
-<main>
-    <table>
-        <thead>
-            <tr>
-                <th>Скин</th>
-                <th>Цена</th>
-                <th>Действие</th>
-            </tr>
-        </thead>
-        <tbody id="cart-items">
-            <!-- Здесь будут товары из корзины -->
-        </tbody>
-    </table>
-    <p><strong>Итого: ₽<span id="total-price">0.00</span></strong></p>
-    <button onclick="checkout()">Оплатить</button>
+<main class="cart-container">
+    <h2>Ваши товары</h2>
+    <div class="cart-table-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Скин</th>
+                    <th>Цена</th>
+                    <th>Действие</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Здесь будут товары из корзины -->
+            </tbody>
+        </table>
+    </div>
+    <div class="cart-summary">
+        <p class="total-price">Итого: <span id="total-price">0.00</span> ₽</p>
+        <button class="checkout-btn" onclick="checkout()">Оплатить</button>
+    </div>
 </main>
 
 <footer>
